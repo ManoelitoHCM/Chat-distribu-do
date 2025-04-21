@@ -1,8 +1,9 @@
 // backend/chat-service/mongo.js
 const { MongoClient } = require('mongodb');
 
-const uri = 'mongodb://localhost:27017';
+const uri = 'mongodb://127.0.0.1:27017'; // IPv4 explícito
 const client = new MongoClient(uri);
+
 let db;
 
 async function connect() {
